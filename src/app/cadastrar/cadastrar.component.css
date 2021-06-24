@@ -1,7 +1,33 @@
-#img-bg{
+#img-bg-cadastrar{
     background-image: url('../../../assets/img/photo-mar.jpeg');
     min-height: 695px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#btn-cancelar{
+    background-color: #A4ABA5;
+}
+
+#btn-cancelar:hover{
+    background-color: #888d89;
+    transition: 0.3s;
+}
+
+#btn-cadastrar{
+    background-color: #3bb66a;
+}
+
+#btn-cadastrar:hover{
+    background-color: #78be98;
+    transition: 0.3s;
+}
+
+#titulo-cadastrar{
+    font-size: 35px;
+}
+
+.form-group{
+    color: #738896;
 }
