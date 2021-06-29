@@ -1,0 +1,22 @@
+.fs-16 {
+    font-size: 16pt;
+}
+
+a {
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #A4ABA5;
+}
+
+
+.navbar-nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav li a:hover{
+    color: #e6a3ab;
+    transition: 0.3s;
+}

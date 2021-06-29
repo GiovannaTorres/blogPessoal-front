@@ -1,0 +1,24 @@
+#img-bg-entrar{
+    background-image: url('../../../assets/img/photo-nuvens.jpeg');
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-entrar{
+    background-color: #81a8b9;
+}
+
+#btn-entrar:hover{
+    background-color: #e6a3ab;
+    transition: 00.3s;
+}
+
+.form-group{
+    color: #738896;
+}
+
+#titulo-entrar{
+    font-size: 35px;
+}
