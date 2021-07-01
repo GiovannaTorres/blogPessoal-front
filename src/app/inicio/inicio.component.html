@@ -1,1 +1,112 @@
-<p>inicio works!</p>
+<!-- Bem vindo e botões -->
+<div id="background" class="container-fluid">
+
+        <div class="row">
+
+            <!--https://i.imgur.com/PiA7UQW.png imagem rosa-->
+            <!--https://i.imgur.com/X50MTvf.png imagem verde-->
+
+            <div class="col-md-5 d-flex justify-content-center">
+                <img class="me-3 mt-3 ms-2" src="https://i.imgur.com/X50MTvf.png" alt="" height="400px" width="400px">
+            </div>
+
+            <div class="col-md-7">
+
+                <div class="row d-flex justify-content-center mt-5">
+                    <div class="col-md-9 text-white">
+                        <h1 class="fs-54">Bem vindo(a)!</h1>
+                        <h3 class="fs-24">se expresse aqui</h3>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center mt-4 mb-5">
+                    <div class="col-md-9 justify-content-start">
+                        <button data-bs-toggle="modal" data-bs-target="#novaPostagem" class="btn btn-light me-3">Nova postagem</button>
+                        <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+</div>
+
+
+<!-- Quadro de postagens em tabs -->
+
+<div id="postagens" class="container m-5 mt-5">
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+          <button class="nav-link active text-secondary fw-bold" id="nav-todasPostagens-tab" data-bs-toggle="tab" data-bs-target="#todasPostagens" type="button" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as postagens</button>
+
+          <button class="nav-link text-secondary fw-bold" id="nav-minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#minhasPostagens" type="button" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas postagens</button>
+
+          <button class="nav-link text-secondary fw-bold" id="nav-postagemTema-tab" data-bs-toggle="tab" data-bs-target="#postagemTema" type="button" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por tema</button>
+
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
+            todas teste
+        </div>
+
+        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+            minhas teste
+        </div>
+
+        <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+            temas teste
+        </div>
+
+      </div>
+</div>
+
+
+
+
+
+
+
+<!-- Modal de nova mensagem -->
+
+  <div class="modal fade" id="novaPostagem" tabindex="-1" aria-labelledby="postagemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="postagemModalLabel">Nova Postagem</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" class="form-control" id="titulo" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="texto">Texto</label>
+                <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="tema">Escolha um tema ou <a href="">cadastre um novo</a>: </label>
+                <select class="form-control" name="tema" id="tema">
+                    <option value="">Temas</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success">Publicar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
