@@ -27,6 +27,8 @@
 #titulo-cadastrar{
     font-size: 45px;
     color: var(--color-one);
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .form-group{

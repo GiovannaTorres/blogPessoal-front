@@ -27,9 +27,9 @@ ul.social-networking li{
 }
 
 .footer-copyright {
-    background-color: #e6a3ab;
+    background-color: var(--colour-five);
 }
 
 footer{
-    background-color: #A4ABA5;
+    background-color: var(--color-one);
 }

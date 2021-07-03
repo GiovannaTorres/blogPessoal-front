@@ -6,7 +6,7 @@ html {
 
 :root{
     --color-one: #97b6c0;
-    --color-two: #bdcec0;
+    --color-two: #d4e5ff;
     --color-three: #c1d3db;
     --color-four: #84c4cc;
     --colour-five: #5a7d8d;
@@ -20,4 +20,13 @@ html {
     font-size: 24pt;
     color: var(--color-one);
 }
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.italic{
+    font-style: italic;
+}
+
 

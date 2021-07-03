@@ -3,12 +3,12 @@
 <div id="bg-tema" class="row">
     <div class="col-md-12 text-white">
 
-        <a routerLink="/inicio" class="text-white text-left">
+        <a routerLink="/inicio" class="fs-24 text-left">
             <i class="fa fa-angle-double-left" aria-hidden="true"></i> início
         </a>
 
-        <h1 class="fs-54 text-center">Temas</h1>
-        <h3 class="fs-24 text-center">veja aqui os temas cadastrados ou cadastre um novo</h3>
+        <h1 class="fs-54 text-center montserrat">Temas</h1>
+        <h3 class="fs-24 text-center montserrat italic">veja aqui os temas cadastrados ou cadastre um novo</h3>
 
         <div class="row d-flex justify-content-center mt-4 mb-5">
             <div class="col-md-3">
@@ -17,8 +17,8 @@
                     <input [(ngModel)]="tema.descricao" type="text" class="form-control" id="descricao" placeholder="A descrição do tema vai aqui">
                 </div>
 
-                <div class=" mt-3 d-flex justify-content-center">
-                    <button (click)="cadastrar()" class="btn btn-light">Cadastrar</button>
+                <div class="mt-3 d-flex justify-content-center">
+                    <button (click)="cadastrar()" id="btn-tema" class="btn btn-light">Cadastrar</button>
                 </div>
 
             </div>
@@ -34,7 +34,7 @@
 
     <div class="row mt-5">
         <div class="col-md-12">
-            <h2 class="text-center">Todos os temas</h2>
+            <h2 class="text-center montserrat">Todos os temas</h2>
         </div>
     </div>
 

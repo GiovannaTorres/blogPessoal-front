@@ -1,3 +1,11 @@
 #bg-tema{
-    background-color: var(--color-one);
+    background-image: url('../../../assets/img/photo-clouds-lightblue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-tema:hover{
+    background-color: var(--color-three);
+    -webkit-box-shadow: 0px 0px 28px 10px #CAD6E5; 
+    box-shadow: 0px 0px 28px 10px #CAD6E5;
 }
