@@ -1,5 +1,7 @@
 #background{
-    background-color: #c7ccc8;
+    background-image: url('../../../assets/img/photo-nuvens.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 74vh;
 }
 

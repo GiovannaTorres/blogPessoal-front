@@ -4,11 +4,20 @@ html {
     scroll-behavior: smooth;
 }
 
+:root{
+    --color-one: #97b6c0;
+    --color-two: #bdcec0;
+    --color-three: #c1d3db;
+    --color-four: #84c4cc;
+    --colour-five: #5a7d8d;
+  }
+
 .fs-54{
     font-size: 54pt;
 }
 
 .fs-24{
     font-size: 24pt;
-    color: #bfffda
+    color: var(--color-one);
 }
+

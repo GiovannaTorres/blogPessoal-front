@@ -7,7 +7,7 @@ a {
 }
 
 .navbar {
-    background-color: #A4ABA5;
+    background-color: var(--color-two);
 }
 
 
@@ -17,6 +17,6 @@ a {
 }
 
 .navbar-nav li a:hover{
-    color: #ecb6bc;
+    color: var(--color-three);
     transition: 0.3s;
 }

@@ -1,5 +1,5 @@
 #img-bg-entrar{
-    background-image: url('../../../assets/img/photo-nuvens.jpeg');
+    background-image: url('../../../assets/img/photo-cloud-medium-blue.jpg');
     min-height: 695px;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,11 +7,11 @@
 }
 
 #btn-entrar{
-    background-color: #81a8b9;
+    background-color: var(--color-three);
 }
 
 #btn-entrar:hover{
-    background-color: #e6a3ab;
+    background-color: var(--colour-five);
     transition: 00.3s;
 }
 
@@ -20,5 +20,6 @@
 }
 
 #titulo-entrar{
-    font-size: 35px;
+    font-size: 45px;
+    color: var(--color-one);
 }
