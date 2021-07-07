@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment.prod';
 import { Postagem } from '../model/Postagem';
 import { Tema } from '../model/Tema';
 import { User } from '../model/User';
+import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 
@@ -28,7 +29,7 @@ export class InicioComponent implements OnInit {
   constructor(
     private router: Router,
     private postagemService: PostagemService,
-    private temaService: TemaService
+    private temaService: TemaService,
   ){ }
 
 
@@ -41,6 +42,7 @@ export class InicioComponent implements OnInit {
     this.postagemService.refreshToken()
     this.getAllTemas()
     this.getAllPostagens()
+    this.findByIdUser()
   }
 
 
@@ -61,6 +63,13 @@ export class InicioComponent implements OnInit {
       this.tema = resp
     })
   }
+
+  findByIdUser(){
+    this.postagemService.getByIdUser(this.idUser).subscribe((resp: User) => {
+      this.user = resp
+    })
+  }
+
 
   publicar(){
     this.tema.id = this.idTema
