@@ -85,15 +85,22 @@
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-3 d-flex justify-content-center">
 
         <div class="card border-secondary mb-3 mt-2 me-3" style="max-width: 19rem;" *ngFor='let item of user.postagem'>
-          <div class="card-header"><small class="text-muted"></small></div>
+          <div class="card-header text-end">
+            <a [routerLink]="['/postagem-edit', item.id]" class="btn btn-outline-secondary text-primary me-1"
+              href="">Editar</a>
+            <a [routerLink]="['/postagem-delete', item.id]" class=" btn btn-outline-secondary text-danger"
+              href="">Apagar</a>
+          </div>
           <div class="card-body text-secondary">
             <h5 class="card-title m-0">{{item.titulo}}</h5>
             <small class="text-muted">Tema: {{item.tema.descricao}}</small>
             <p class="card-text mt-4">{{item.texto}}</p>
           </div>
           <div class="card-footer bg-transparent border-secondary">
-            <small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}</small>
+            <small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date:
+              'HH:mm'}}</small>
           </div>
+          
         </div>
 
       </div>
@@ -123,6 +130,8 @@
 
   </div>
 </div>
+
+
 
 
 

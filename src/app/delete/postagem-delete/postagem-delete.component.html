@@ -1,0 +1,39 @@
+<div class="container mb-5  mt-5">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-secondary montserrat">Apagar Postagem</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center text-danger montserrat">Tem certeza que deseja apagar essa postagem?</h4>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mt-3">
+        <div class="card border-secondary mb-3 mt-2 me-3" style="max-width: 19rem;">
+            <div class="card-header text-end">
+            </div>
+            <div class="card-body text-secondary">
+              <h5 class="card-title m-0">{{postagem.titulo}}</h5>
+              <small class="text-muted">Tema: {{postagem.tema.descricao}}</small>
+              <p class="card-text mt-4">{{postagem.texto}}</p>
+            </div>
+            <div class="card-footer bg-transparent border-secondary">
+              <small class="text-muted">{{postagem.date | date: 'dd/MM/yyyy'}} às {{postagem.date | date:
+                'HH:mm'}}</small>
+            </div>
+            
+          </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md12 d-flex justify-content-center">
+            <button routerLink='/inicio' class="btn btn-danger me-3">Não</button>
+            <button (click)="apagar()" class="btn btn-success">Sim</button>
+        </div>
+    </div>
+
+</div>
