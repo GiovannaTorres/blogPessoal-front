@@ -57,9 +57,22 @@
 
   <div class="tab-content" id="nav-tabContent">
 
+
     <!--Todas as postagens tab-->
     <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
 
+      
+      <!--Input de pesquisa por titulo-->
+      <div class="row d-flex justify-content-center mt-5 mb-5">
+        <div class="col-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" id="titulo" placeholder="Pesquise postagens pelo título"  [(ngModel)]='tituloPost' (keyup)='findByTituloPostagem()'>
+          </div>
+        </div>
+      </div>
+  
+
+      <!--Cards de postagem-->
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-3 d-flex justify-content-center">
 
         <div class="card border-secondary mb-3 mt-2 me-3" style="max-width: 19rem;" 
@@ -83,6 +96,7 @@
     <!--Minhas postagens tab-->
     <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
 
+      <!--Cards com botões de apagar e editar-->
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-3 d-flex justify-content-center">
 
         <div class="card border-secondary mb-3 mt-2 me-3" style="max-width: 19rem;" 
@@ -113,6 +127,17 @@
     <!--Postagens por tema tab-->
     <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
 
+
+      <!--Input de pesquisa por tema-->
+      <div class="row d-flex justify-content-center mt-5 mb-5">
+        <div class="col-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" id="titulo" placeholder="Pesquise postagens por tema"  [(ngModel)]='nomeTema' (keyup)='findByNomeTema()'>
+          </div>
+        </div>
+      </div>
+
+      <!--Cards de postagem-->
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-3 d-flex justify-content-center" 
       *ngFor='let tema of listaTemas | orderBy : key : reverse'>
 
@@ -120,6 +145,7 @@
           <div class="card-header"><small class="text-muted">{{item.usuario.nome}}</small></div>
           <div class="card-body text-secondary">
             <h5 class="card-title m-0">{{item.titulo}}</h5>
+            <small class="text-muted">Tema: {{item.tema.descricao}}</small>
             <p class="card-text mt-4">{{item.texto}}</p>
           </div>
           <div class="card-footer bg-transparent border-secondary">
