@@ -26,6 +26,11 @@ export class TemaComponent implements OnInit {
       this.alertas.showAlertPrimary('Sua sessão expirou, faça o login novamente.')
       this.router.navigate(['/entrar'])
     }
+
+    if(environment.tipo != 'adm'){
+      this.alertas.showAlertPrimary('Você precisa ser administrador para acessar essa página!')
+      this.router.navigate(['/inicio'])
+    }
     
     this.temaService.refreshToken()
     this.findAllTemas()
